@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy" content="">
+        <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <!--<link rel="stylesheet" href="css/index.css">-->
+        <link rel="stylesheet" href="css/bulma.min.css">
+        <link href="css/fontawesome/css/all.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="deviceready" class="blink">
+                <div class="columns" style="margin-top: 35px;">
+                    <div class="column is-full has-text-centered">
+                        <img src="./img/pokemon_tcg_logo.png" style="width: 50%;">
+                    </div>
+                </div>
+
+                <div class="columns" style="margin: 0 15px 0 15px;">
+                    <div class="column is-full has-text-centered">
+                        <p id="titulo">Listado de Cartas</p>
+                    </div>
+                </div>
+
+                <div class="columns" style="margin: 0 15px 0 15px;">
+                    <div class="column is-full">
+                        <table class="table" style="width: 100%;" id="tabla_cartas"></table>
+                    </div>
+                </div>
+            </div>
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/jquery.blockUI.js"></script>
+        <script src="js/axios.min.js"></script>
+        <script src="js/data.js"></script>
+        <script src="js/listaPokemon.js"></script>
+    </body>
+</html>

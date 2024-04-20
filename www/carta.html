@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy" content="">
+        <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <!--<link rel="stylesheet" href="css/index.css">-->
+        <link rel="stylesheet" href="css/bulma.min.css">
+        <link href="css/fontawesome/css/all.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="deviceready" class="blink">
+            <div class="columns" style="margin: 0 15px 0 15px;">
+                <div class="column is-full has-text-centered">
+                    <p id="nombre_carta"></p>
+                </div>
+            </div>
+
+            <div class="columns" style="margin: 0 15px 0 15px;">
+                <div class="column is-full has-text-centered">
+                   <img style="height: 200px;" id="img_carta">
+                </div>
+            </div>
+
+            <div class="columns" style="margin: 0 15px 0 15px;">
+                <div class="column is-full has-text-centered">
+                    <table class="table is-bordered" style="width: 100%;">
+                        <tr>
+                            <td>Tipo de Carta</td>
+                            <td id="supertype"></td>
+                        </tr>
+
+                        <tr>
+                            <td>HP</td>
+                            <td id="hp"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Fase</td>
+                            <td id="subtype"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Tipo</td>
+                            <td id="type"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Pre-Evolución</td>
+                            <td id="evolves_from"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Evolución</td>
+                            <td>
+                                <ul id="evolves_to" style="list-style: none;"></ul>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Número</td>
+                            <td id="number"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Rareza</td>
+                            <td id="rarity"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Precio</td>
+                            <td>
+                                <ul id="price_tcg_player" style="list-style: none;">
+
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/jquery.blockUI.js"></script>
+        <script src="js/axios.min.js"></script>
+        <script src="js/data.js"></script>
+        <script src="js/carta.js"></script>
+    </body>
+</html>

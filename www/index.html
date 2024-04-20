@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy" content="">
+        <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <!--<link rel="stylesheet" href="css/index.css">-->
+        <link rel="stylesheet" href="css/bulma.min.css">
+        <link href="css/fontawesome/css/all.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="deviceready" class="blink">
+            <div class="columns" style="margin-top: 35px;">
+                <div class="column is-full has-text-centered">
+                    <img src="./img/pokemon_tcg_logo.png" style="width: 50%;">
+                </div>
+            </div>
+
+            <div class="columns" style="margin: 0 15px 0 15px;">
+                <div class="column is-full">
+                    <label for="nombre_carta" class="" style="font-weight: bold">Carta:</label>
+                    <input class="input" type="text" id="nombre_carta" placeholder="Nombre Carta" style="margin-bottom: 5px;">
+                    <button type="button" class="button is-small">BUSCAR CARTA</button>
+                </div>
+            </div>
+
+            <div class="columns" style="margin: 0 15px 0 15px;">
+                <div class="column is-full has-text-centered">
+                    <a href="./busquedaTipo.html" class="button is-small">BUSCAR POR TIPO</a>
+
+                    <a href="./busquedaEdicion.html" class="button is-small">BUSCAR POR EDICIÓN</a>
+                </div>
+            </div>
+
+            <div class="columns" style="margin: 0 15px 0 15px;">
+                    <div class="column is-full">
+                        <table class="table is-bordered" style="width: 100%;">
+                            <tr class="has-text-centered">
+                                <td>Cartas VMAX</td>
+                                <td>Cartas V</td>
+                            </tr>
+
+                            <tr class="has-text-centered">
+                                <td id="vmax"></td>
+                                <td id="v"></td>
+                            </tr>
+
+                            <tr class="has-text-centered">
+                                <td>Cartas V-STAR</td>
+                                <td>Cartas Mega</td>
+                            </tr>
+
+                            <tr class="has-text-centered">
+                                <td id="vstar"></td>
+                                <td id="mega"></td>
+                            </tr>
+
+                            <tr class="has-text-centered">
+                                <td>Cartas EX</td>
+                                <td>Cartas GX</td>
+                            </tr>
+
+                            <tr class="has-text-centered">
+                                <td id="ex"></td>
+                                <td id="gx"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+        </div>
+
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/jquery.blockUI.js"></script>
+        <script src="js/axios.min.js"></script>
+        <script src="js/data.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
