@@ -28,8 +28,8 @@ const getCartas = (data) =>  {
         data.forEach(carta => {
             $("#tabla_cartas").append("" +
                 "<tr class='has-text-centered'>" +
-                "<td><a href='#'>" + carta.name + "</a></td>" +
-                "<td><a href='./carta.html?id=" + carta.id + "'><img src='" + carta.images.small + "' style='height: 150px;'></a></td>" +
+                    "<td><a href='./carta.html?id=" + carta.id + "'>" + carta.name + "</a></td>" +
+                    "<td><a href='./carta.html?id=" + carta.id + "'><img src='" + carta.images.small + "' style='height: 150px;'></a></td>" +
                 "</tr>");
         });
 
